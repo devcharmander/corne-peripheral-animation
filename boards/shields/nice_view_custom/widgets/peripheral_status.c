@@ -35,8 +35,6 @@ LV_IMG_DECLARE(corro09);
 LV_IMG_DECLARE(corro10);
 LV_IMG_DECLARE(corro11);
 LV_IMG_DECLARE(corro12);
-LV_IMG_DECLARE(tanjiro);
-
 
 const lv_img_dsc_t *anim_imgs[] = {
     &corro01,
