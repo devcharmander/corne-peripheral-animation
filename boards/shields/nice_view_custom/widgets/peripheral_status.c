@@ -49,7 +49,6 @@ const lv_img_dsc_t *anim_imgs[] = {
     &corro10,
     &corro11,
     &corro12,
-    &tanjiro,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
