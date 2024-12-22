@@ -490,3 +490,8 @@ https://deploy-preview-2438--zmk.netlify.app/docs/advanced-guides/making-modules
 https://docs.zephyrproject.org/latest/develop/modules.html
 
 https://docs.lvgl.io/master/widgets/animimg.html
+
+```sh
+ls | while read -r file; do ffmpeg -i $file -vf "scale=68:140:flags=neighbor,format=gray" -pix_fmt monob $file-pixel_art.png
+; done;
+```

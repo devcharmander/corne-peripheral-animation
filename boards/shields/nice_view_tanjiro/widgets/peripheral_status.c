@@ -23,10 +23,16 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
-LV_IMG_DECLARE(tanjiro);
+LV_IMG_DECLARE(tanjiro1);
+LV_IMG_DECLARE(tanjiro2);
+LV_IMG_DECLARE(tanjiro3);
+LV_IMG_DECLARE(tanjiro4);
 
 const lv_img_dsc_t *anim_imgs[] = {
-    &tanjiro,
+    &tanjiro1,
+    &tanjiro2,
+    &tanjiro3,
+    &tanjiro4,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -124,7 +130,7 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
     lv_obj_center(art);                                         //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 12);     //<--
+    lv_animimg_set_src(art, (const void **) anim_imgs, 4);     //<--
     lv_animimg_set_duration(art, CONFIG_CUSTOM_ANIMATION_SPEED);//<--
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
     lv_animimg_start(art);                                      //<--
