@@ -1,6 +1,6 @@
 file_format: "1"
-id: nice_view_tanjiro
-name: nice!view_tanjiro
+id: nice_view_hammerhead
+name: nice!view_hammerhead
 type: shield
 url: https://nicekeyboards.com/nice-view
 requires: [nice_view_header]
